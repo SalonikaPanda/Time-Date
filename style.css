@@ -1,0 +1,86 @@
+body {
+    background: #6729d8a8;
+}
+h1{
+    font-size: 3.5rem;
+}
+
+.firstsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.timebox {
+    display: inline-flex;
+    overflow-x: hidden;
+}
+.timebox div:nth-child(3),
+.timebox div:nth-child(6),
+.timebox div:nth-child(9) {
+    background-color: transparent; }
+.timebox div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw; /* Use viewport width as a relative unit for height */
+    width: 10vw;  /* Use viewport width as a relative unit for width */
+    max-width: 130px; /* Set a maximum width for each box */
+    border-radius: 50%;
+    background: #9349a0ad;
+    font-size: 3.5vw; /* Use viewport width as a relative unit for font size */
+    color: #333;
+    font-weight: bolder;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s; 
+    margin: 2px;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+.secondsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Datebox {
+    display: inline-flex;
+    overflow-x: hidden;
+}
+
+.Datebox div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vw; /* Set a fixed height for the boxes */
+    width: 20vw;  /* Set a fixed width for the boxes to maintain square shape */
+    border-radius: 50%;
+    background: #9349a0ad;
+    font-size: 3.5vw;
+    color: #333;
+    font-weight: bolder;
+    margin: 2px;
+}
+
+/* Additional responsive styling for better appearance on smaller screens */
+@media screen and (max-width: 600px) {
+    .firstsection {
+        margin-top: 150px;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    .timebox div {
+        height: 15vw;
+        width: 15vw;
+        max-width: 100px;
+        font-size: 5vw;
+    }
+}
