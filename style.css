@@ -25,12 +25,12 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vw; /* Use viewport width as a relative unit for height */
-    width: 10vw;  /* Use viewport width as a relative unit for width */
-    max-width: 130px; /* Set a maximum width for each box */
+    height: 10vw; 
+    width: 10vw; 
+    max-width: 130px; 
     border-radius: 50%;
     background: #9349a0ad;
-    font-size: 3.5vw; /* Use viewport width as a relative unit for font size */
+    font-size: 3.5vw; 
     color: #333;
     font-weight: bolder;
     backface-visibility: hidden;
@@ -59,8 +59,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vw; /* Set a fixed height for the boxes */
-    width: 20vw;  /* Set a fixed width for the boxes to maintain square shape */
+    height: 15vw; 
+    width: 20vw; 
     border-radius: 50%;
     background: #9349a0ad;
     font-size: 3.5vw;
