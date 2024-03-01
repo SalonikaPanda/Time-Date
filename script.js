@@ -3,7 +3,7 @@ function updateClock() {
   const hours = formatTimeComponent(currentTime.getHours());
   const minutes = formatTimeComponent(currentTime.getMinutes());
   const seconds = formatTimeComponent(currentTime.getSeconds());
-  const ampm = currentTime.getHours() >= 12 ? "PM" : "AM"; // Determine AM or PM
+  const ampm = currentTime.getHours() >= 12 ? "PM" : "AM"; 
 
   const boxes = document.querySelectorAll(".timebox div");
   flipBox(boxes[0], hours[0]);
@@ -49,5 +49,4 @@ function flipBox(boxElement, digit) {
   }
 }
 
-// Update the clock every second
 setInterval(updateClock, 1000);
